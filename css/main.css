@@ -115,7 +115,8 @@ ol
 a 
 {
   color: #e2e3ed;
-  text-decoration: none;  
+  text-decoration: none; 
+  background-color: transparent; 
 }
 
 h1
@@ -146,12 +147,15 @@ p
   line-height: 1.285;
 }
  
-img {
- 
+img 
+{
+ width: 100%;
+ border-style: none;
 }
  
-figure {
- 
+figure 
+{
+  margin: 0px; 
 }
  
 address 
@@ -177,13 +181,12 @@ footer
 	justify-content: center;
   flex-flow: row wrap;
   align-items: center;
-  color: #e2e3ed;
+  background-color: #202322;
 }
 
 header
 {
   padding: 15px 0px;
-  background-color: #202322;
 }
 
 header .content-wrapper
@@ -193,6 +196,15 @@ header .content-wrapper
   align-items: center;
   flex-flow: row;
   margin: 10px;
+}
+
+header figure
+{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider
@@ -212,7 +224,6 @@ header nav
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #202322;
 }
 
 header nav ul
@@ -230,7 +241,6 @@ header nav ul li
 footer
 {
   flex-direction: column;
-  background-color: #202322;
   text-align: center;
 }
 
@@ -289,6 +299,10 @@ footer .contact
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
+  background-image: url('../img/pic1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-area h1 {
@@ -351,13 +365,6 @@ input[type=button] {
 }
 
 /*--Features--*/
-
-.features
-{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
 
 
 .features h2
@@ -615,6 +622,7 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
+
 @media only screen and (min-width: 768px)
 {
 /* Tablet style here */
@@ -672,7 +680,17 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews article figure,
+  .reviews article div
+  {
+    width: 49%;
+  }
   /**** Hero Area ****/
+
+  .hero-area
+  {
+    min-height: 600px;
+  }
 
   .hero-area h1 
   {
@@ -699,12 +717,23 @@ input[type=button] {
 
   /**** Features ****/
 
+  .features
+  {
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/pic3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   .features h2
   {
     margin-bottom: 20px;
   }
 
-  .features article {
+  .features article 
+  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -834,7 +863,8 @@ input[type=button] {
     padding: 15px 0;
   }
 
-  .content-wrapper {
+  .content-wrapper 
+  {
     max-width: 960px;
   }
 
@@ -852,6 +882,9 @@ input[type=button] {
       line-height: 1.333;
   }
   /* Hero */
+
+
+
   .hero-area h1 {
     font-size: 3.75em;
     width: 60%;
