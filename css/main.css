@@ -163,6 +163,25 @@ address
   font-style: normal; 
 }
 
+.fas, .fa
+{
+  font-weight: 900;
+}
+
+.fa, .far, .fas
+{
+  font-family: "Font Awsome 5 Free";
+}
+
+.fa, .fab, .fal, .far, .fas 
+{
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
 
  /*******************Regular Page*****************/
 
@@ -382,6 +401,12 @@ input[type=button] {
 {
   margin: 0px;
   text-align: center;
+}
+
+.features i 
+{
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features .features-items
