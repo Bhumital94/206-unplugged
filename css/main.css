@@ -284,19 +284,7 @@ footer .contact
 {
   margin-bottom: 50px;
 }
-/*
-.footer-content
-{
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
 
-.social
-{
-  width: 45%;
-}
-*/
 .social-icons
 {
   display: flex;
@@ -375,18 +363,6 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/*
-.form-description
-{
-  width: 45%;
-  color: #e2e3ed;
-}
-
-.form
-{/*
-  width: 45%;
-  color: #e2e3ed;*/
-}
 
 /*--Features--*/
 
@@ -862,6 +838,7 @@ footer .social-icons p i
   {
       line-height: 1.285;
   }
+
 
   footer .copyright 
   {
