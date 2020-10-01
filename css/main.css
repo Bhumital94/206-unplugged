@@ -183,6 +183,11 @@ address
     line-height: 1;
 }
 
+.fab
+{
+  font-family: "Font Awsome  Brands"
+}
+
  /*******************Regular Page*****************/
 
 .content-wrapper
@@ -438,6 +443,23 @@ input[type=button] {
 {
   width: 55%;
   margin: 20px 0px;
+}
+
+footer .social-icons p
+{
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 0px 20px;
+}
+
+footer .social-icons p i
+{
+  font-size: 1.3125em;
 }
 
 /*
